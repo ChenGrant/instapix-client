@@ -16,6 +16,7 @@ const Profile = () => {
       <h3>Todo</h3>
       <ul>
         <li>implement resume stuff</li>
+        <li>src for gcp photos have an expiration, but firebase doesnt, get the firebase one instead of gcp</li>
         <li>make frontend nice: https://simplified.com/ai-writer/photo-captions-generator</li>
       </ul>
       <Posts />
