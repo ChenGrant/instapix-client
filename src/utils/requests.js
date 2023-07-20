@@ -1,4 +1,7 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL =
+  process.env.REACT_APP_ENV === "dev"
+    ? "http://localhost:8000"
+    : "http://5.78.74.51:8000";
 
 export const fetchPhotos = async (user) => {
   const response = await fetch(`${BASE_URL}/photo-list`, {
@@ -32,6 +35,6 @@ export const generatePost = async (user, prompt) => {
     method: "POST",
     body: JSON.stringify({ prompt }),
   });
-  const data = response.json()
-  return data
+  const data = response.json();
+  return data;
 };
