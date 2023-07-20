@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { auth } from "../utils/firebase";
+import { auth } from "./firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { UserProvider } from "../context/UserContext";
+import { UserProvider } from "../../contexts/UserContext";
+import './firebase'
 
 const FirebaseUserListener = ({ children }) => {
   const [user, setUser] = useState(undefined);
