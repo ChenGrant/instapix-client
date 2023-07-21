@@ -1,7 +1,7 @@
 const BASE_URL =
   process.env.REACT_APP_ENV === "dev"
     ? "http://localhost:8000"
-    : "https://5.78.74.51:8000";
+    : "https://instapix.ca/api";
 
 export const fetchPhotos = async (user) => {
   const response = await fetch(`${BASE_URL}/photo-list`, {
