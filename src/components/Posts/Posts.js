@@ -9,6 +9,7 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [postsIndex, setPostsIndex] = useState(0);
   const { phone } = useScreenSize();
+  
   return (
     <Box
       display="flex"

@@ -58,7 +58,7 @@ const UploadPhotoModal = ({ handleClose, setPhotos }) => {
             >
               <Typography variant="h5">
                 {photosToUpload.length === 0
-                  ? "Drag 'n' drop some files"
+                  ? "Drag 'n drop some files"
                   : photosToUpload.length === 1
                   ? "1 photo selected"
                   : `${photosToUpload.length} photos selected`}
