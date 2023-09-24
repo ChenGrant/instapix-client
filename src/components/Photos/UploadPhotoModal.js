@@ -57,7 +57,7 @@ const UploadPhotoModal = ({ handleClose, setPhotos }) => {
               onClick={() => document.getElementById("fileInput").click()}
             >
               <Typography variant="h5">
-                {!photosToUpload
+                {photosToUpload.length === 0
                   ? "Drag 'n' drop some files"
                   : photosToUpload.length === 1
                   ? "1 photo selected"
@@ -78,7 +78,7 @@ const UploadPhotoModal = ({ handleClose, setPhotos }) => {
                 <Button
                   onClick={uploadPhoto}
                   variant="contained"
-                  disabled={!photosToUpload}
+                  disabled={photosToUpload.length === 0}
                   sx={{
                     width: "100%",
                     borderRadius: "5px",
